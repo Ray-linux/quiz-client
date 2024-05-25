@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap');
+.timer-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+    right: 23px;
+}
+.time-display{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.flex-display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
