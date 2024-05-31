@@ -57,11 +57,10 @@ function Main() {
 
   return (
     <div className="container">
-      <h1 className="title text-light">Aptitude Test</h1>
+      <h1 className="title text-light">Internet usage addition Test</h1>
       <ol>
-        <li>You will be asked 50 questions one after another.</li>
-        <li>1 points is awarded for the correct answer.</li>
-        <li>Each question has four options. you can choose only one option.</li>
+        <li>You will be asked 20 questions one after another.</li>
+        <li>Each question has five options. you can choose only one option.</li>
         <li>You can review and change answer before the test finish.</li>
         <li>The result will be declared at the end of the test</li>
       </ol>

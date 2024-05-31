@@ -6,6 +6,7 @@
     position: absolute;
     top: 0;
     right: 23px;
+    display: none;
 }
 .time-display{
     font-family: 'Noto Sans', sans-serif;

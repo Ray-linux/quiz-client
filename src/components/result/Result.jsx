@@ -22,6 +22,8 @@ function Result() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
+
+  const [resStatus, setResStatus]  = useState();
   const [isDisclosed, setIsDisclosed] = useState(false);
   const endTime = new Date("2023-11-23T13:00:00");
 
@@ -59,10 +61,11 @@ function Result() {
   } = useSelector((state) => state);
 
 
-  const totalPoints = queue.length * 10;
+  const totalPoints = queue.length * 5;
   const attempts = attempts_Number(result);
   const earnPoints = earnPoints_Number(result, answers, 10);
   const flag = flagResult(totalPoints, earnPoints);
+  
 
   //store user result
   useEffect(() => {
@@ -71,9 +74,13 @@ function Result() {
       username: userId,
       attempts,
       points: earnPoints,
-      achived: flag ? "Passed" : "Failed",
+      // achived: flag ? "Passed" : "Failed",
+      achived: resStatus
+      
     });
   }, []);
+
+
 
   const onRestart = () => {
     // console.log('on restart')
@@ -108,10 +115,10 @@ function Result() {
           <div className="flex">
             <span>Quiz result : </span>
             <span
-              style={{ color: `${flag ? "#2aff95" : "#ff2a66"}` }}
+              // style={{ color: `${flag ? "#2aff95" : "#ff2a66"}` }}
               className="bold"
             >
-              {flag ? "passed" : "Failed"}
+              {flag }
             </span>
           </div>
         </div>
@@ -131,3 +138,4 @@ function Result() {
 }
 
 export default Result;
+

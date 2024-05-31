@@ -8,11 +8,31 @@ export function attempts_Number(result){
 }
 
 export function earnPoints_Number(result, answers, point){
-    return result.map((element, i) => answers[i] === element).filter(i => i).map(i => point).reduce((prev, curr) => prev + curr, 0);
+    let res = 0
+    result.filter(element => element !== undefined).map(element => {
+        res = res + element
+        // console.log(res);
+    });
+    
+    // console.log(res)
+    // return result.map((element, i) => answers[i] === element).filter(i => i).map(i => point).reduce((prev, curr) => prev + curr, 0);
+    return res
 }
 
+//export function flagResult(totalPoints, earnPoints){
+  //  return (totalPoints * 50 / 100) < earnPoints; /** earn 50% marks */
+//}
+
 export function flagResult(totalPoints, earnPoints){
-    return (totalPoints * 50 / 100) < earnPoints; /** earn 50% marks */
+    // return (totalPoints * 50 / 100) < earnPoints; /** earn 50% marks */
+    if(earnPoints<= 30)
+      return "Your internet usage level is normal"
+    else if(earnPoints>=31 && earnPoints<=49)
+      return "Your internet addiction level is mid"
+    else if(earnPoints>=50 && earnPoints<=79)
+      return "Your internet addiction level is moderate"
+    else if(earnPoints>=80 && earnPoints<=100)
+      return "Your have severe dependence upon the Internet"
 }
 
 /** check user auth  */
