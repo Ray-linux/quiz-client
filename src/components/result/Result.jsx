@@ -97,7 +97,7 @@ function Result() {
             <span className="bold">{userId || ""}</span>
           </div>
           <div className="flex">
-            <span>Total Quiz Points : </span>
+            <span>Total Points : </span>
             <span className="bold">{totalPoints || 0}</span>
           </div>
           <div className="flex">
