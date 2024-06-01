@@ -89,7 +89,7 @@ function Result() {
   };
   return (
     <div className="container">
-      <h1 className="title text-light">Aptitude Test</h1>
+      <h1 className="title text-light">Internet usage addition Test</h1>
       {isDisclosed ? (
         <div className="result flex-center">
           <div className="flex">

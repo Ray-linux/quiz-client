@@ -77,7 +77,7 @@ function Main() {
       <div className="start">
         {start ? (
           <Link className="btn" to={"quiz"} onClick={() => startQuiz()}>
-            Start Quize
+            Start
           </Link>
         ) : (
           <p className="time-display">
