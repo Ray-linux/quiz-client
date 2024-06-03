@@ -35,8 +35,8 @@
 
 
 @media screen and (max-width:600px) {
-    body{
-        background: #faff5a;
+    .container .title{
+        width: 500px;
     }
     
 }
