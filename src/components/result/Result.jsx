@@ -113,7 +113,7 @@ function Result() {
             <span className="bold">{earnPoints || 0}</span>
           </div>
           <div className="flex">
-            <span>Quiz result : </span>
+            <span>Some Suggestion: </span>
             <span
               // style={{ color: `${flag ? "#2aff95" : "#ff2a66"}` }}
               className="bold"
